@@ -1,12 +1,9 @@
 from pathlib import Path
 
-import pytest
+from ome_types_widget import widget
 
-try:
-    from ome_types import widget
-except ImportError:
-    pytest.skip("ome_types not installed", allow_module_level=True)
+EXAMPLE_XML = Path(__file__).parent / "example.ome.xml"
 
 
-def test_widget(valid_xml: Path, qtbot):
-    widget.OMETree(str(valid_xml))
+def test_widget(qtbot):
+    widget.OMETree(str(EXAMPLE_XML))

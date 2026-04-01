@@ -1,0 +1,11 @@
+name: ome-types-widget
+display_name: OME Metadata Widget
+schema_version: 0.2.0
+contributions:
+  commands:
+    - id: ome-types-widget.ome_tree
+      title: Open OME Metadata Tree widget
+      python_name: ome_types_widget.widget:OMETree
+  widgets:
+    - command: ome-types-widget.ome_tree
+      display_name: OME Metadata Tree Widget

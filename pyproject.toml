@@ -3,6 +3,10 @@
 requires = ["hatchling", "hatch-vcs"]
 build-backend = "hatchling.build"
 
+# https://hatch.pypa.io/latest/config/metadata/
+[tool.hatch.version]
+source = "vcs"
+
 # https://peps.python.org/pep-0621/
 [project]
 name = "ome-types-widget"
@@ -57,7 +61,7 @@ dev = [
 ]
 
 [tool.uv.sources]
-ome-types = { workspace = true }
+ome-types-widget = { workspace = true }
 
 # https://docs.astral.sh/ruff
 [tool.ruff]

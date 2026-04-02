@@ -120,7 +120,7 @@ class OMETree(QTreeWidget):
                 return
             try:
                 if ome.endswith(".xml"):
-                    _ome = OME.from_xml(ome)
+                    _ome = OME.from_xml(Path(ome).read_bytes())
                 elif ome.lower().endswith((".tif", ".tiff")):
                     _ome = OME.from_tiff(ome)
                 elif ome.lower().endswith(".nd2"):

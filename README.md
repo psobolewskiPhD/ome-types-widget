@@ -1,4 +1,4 @@
-# ome-types-widget-widget
+# ome-types-widget
 
 [![License](https://img.shields.io/github/license/imaging-formats/ome-types-widget)](LICENSE)
 [![Version](https://img.shields.io/pypi/v/ome-types-widget.svg)](https://pypi.python.org/pypi/ome-types-widget)
@@ -11,21 +11,30 @@ Version](https://img.shields.io/pypi/pyversions/ome-types-widget.svg)](https://p
 -->
 ## A Qt widget that can show OME metadata using ome-types-widget
 
+This widget was originally part of the [`ome-types`](https://github.com/imaging-formats/ome-types) package.
+It can be used as a napari plugin or as astand-alone Qt widget.
+
 ## Installation
 
-### from pip
+> [!IMPORTANT]
+> **A Qt backend is required**  
+>
+> This package **does not** depend on _any specific Qt backend_, but _a backend_ **is required**.
+> We recommend using `PyQt6`, but `PyQt5` or `PySide6` should also work.
+
+### from PyPI
 
 ```shell
 pip install ome-types-widget
 ```
 
-### from conda
+### from conda-forge
 
 ```shell
 conda install -c conda-forge ome-types-widget
 ```
 
-### from github (bleeding edge dev version)
+### from GitHub (bleeding edge dev version)
 
 ```shell
 pip install git+https://github.com/imaging-formats/ome-types-widget.git

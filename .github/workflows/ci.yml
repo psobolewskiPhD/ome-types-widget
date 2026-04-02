@@ -36,8 +36,11 @@ jobs:
             qt: true
             wm: herbstluftwm
 
+        - name: Install
+          run: uv sync
+
         - name: Test
-          run: uv run pytest
+          run: uv run pytest --color=yes --cov --cov-report=xml
           env:
             PLATFORM: ${{ matrix.platform }}
 

@@ -31,7 +31,7 @@ jobs:
             python-version: ${{ matrix.python-version }}
             activate-environment: "true"
         - name: Install Windows OpenGL
-          uses: pyvista/setup-headless-display-action@v4.2
+          uses: pyvista/setup-headless-display-action@v4.3
           with:
             qt: true
             wm: herbstluftwm
